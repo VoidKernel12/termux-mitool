@@ -21,10 +21,6 @@ Open your **Termux** application and execute the following commands step by step
 ```bash
 termux-setup-storage
 ```
- fastboot tools install 
-```bash
-pkg install which python git android-tools -y
-```
  tool clone git
 ```bash
 git clone https://github.com/VoidKernel12/termux-mitool.git
