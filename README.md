@@ -12,7 +12,15 @@ A fast, lightweight, and user-friendly Termux toolkit designed to manage Xiaomi 
   - Download [Termux](https://termux.dev)
   - Download [Termux:API](https://wiki.termux.com/wiki/Termux:API)
 
---
+
+ main permission install 
+```bash
+pkg install termux-tools -y
+```
+```bash
+pkg install which -y
+```
+
 
 ## 📥 Installation & Execution
 Open your **Termux** application and execute the following commands step by step:
@@ -33,20 +41,10 @@ cd termux-mitool
 ```bash
 mi-fastboot devices
 ```
- install tool 
-```bash
-pkg install which -y
-```
- main permission install 
-```bash
-pkg install termux-tools -y
-```
  permission allowed tool 
 ```bash
 chmod +x install.sh
 ```
-install tool
-
 ```bash
 ./install.sh
 ```
