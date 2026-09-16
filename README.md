@@ -21,9 +21,6 @@ Open your **Termux** application and execute the following commands step by step
 ```bash
 termux-setup-storage
 ```
- update upgrade 
-```bash
-pkg update && pkg upgrade -y
 ```
  fastboot tools install 
 ```bash
@@ -31,11 +28,11 @@ pkg install which python git android-tools -y
 ```
  tool clone git
 ```bash
-git clone https://github.com/mrrobo133/Unlock-tool-termux-redmi-poco-unlock.git
+git clone https://github.com/VoidKernel12/termux-mitool.git
 ```
  create folder
 ```bash
-cd Unlock-tool-termux-redmi-poco-unlock
+cd termux-mitool
 ```
  fastboot termux API access command 
 ```bash
@@ -64,6 +61,5 @@ python tool.py
 ```
 
 
-# 🌟 Credits & Official Project Portfolio
-
-
+# 🌟 Credits & Official Project Port
+VoidKernel12/termux-mitool.git
