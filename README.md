@@ -1,4 +1,4 @@
-# 🔓 Xiaomi Termux Tool (unlock-tool)
+unlock
 
 A fast, lightweight, and user-friendly Termux toolkit designed to manage Xiaomi devices directly from your Android terminal.
 
