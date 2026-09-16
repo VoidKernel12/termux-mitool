@@ -21,7 +21,6 @@ Open your **Termux** application and execute the following commands step by step
 ```bash
 termux-setup-storage
 ```
-```
  fastboot tools install 
 ```bash
 pkg install which python git android-tools -y
