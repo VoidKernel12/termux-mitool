@@ -13,15 +13,13 @@ A fast, lightweight, and user-friendly Termux toolkit designed to manage Xiaomi 
   - Download [Termux:API](https://wiki.termux.com/wiki/Termux:API)
 
 
- main permission install 
+ ## main permission install 
 ```bash
 pkg install termux-tools -y
 ```
 ```bash
 pkg install which -y
 ```
-
-
 ## 📥 Installation & Execution
 Open your **Termux** application and execute the following commands step by step:
 
@@ -29,15 +27,15 @@ Open your **Termux** application and execute the following commands step by step
 ```bash
 termux-setup-storage
 ```
- tool clone git
+## tool clone git
 ```bash
 git clone https://github.com/VoidKernel12/termux-mitool.git
 ```
- create folder
+## create folder
 ```bash
 cd termux-mitool
 ```
- permission allowed tool 
+## permission allowed tool 
 ```bash
 chmod +x install.sh
 ```
@@ -76,7 +74,7 @@ termux-usb -r /dev/bus/usb/001/001
 termux-usb -r PUT_YOUR_FOUND_PATH_HERE
 ```
 Note: A native Android permission dialog box will instantly appear on your screen. Tap OK to grant Termux sandbox bypass access to the USB port
-## run tool
+## Run tool
 ```bash
 python tool.py
 ```
