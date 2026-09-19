@@ -37,10 +37,36 @@ git clone https://github.com/VoidKernel12/termux-mitool.git
 ```bash
 cd termux-mitool
 ```
- fastboot termux API access command 
+# OTG USB Permission & Termux:API Setup Guide
+
+Termux runs inside a strict Android sandbox environment, meaning it cannot directly access hardware ports or scan USB devices without explicit system authorization. To bypass this restriction and establish an OTG hardware connection for fastboot commands, you must use the Termux:API bridge.
+
+### Required Prerequisites & Installation
+
+1. Install both Termux and the official Termux:API companion app from the same source (such as F-Droid or GitHub) so their application signatures match.
+2. Open Termux and run the following command to update packages and install the necessary API package:
+
+pkg update && pkg upgrade -y
+pkg install termux-api -y
+
+### USB Permission Trigger Commands
+
+Connect your target device via an OTG cable, then execute the following commands in sequence to trigger the native Android USB permission popup:
+
+1. List the connected USB devices to locate your target device's address path:
 ```bash
-mi-fastboot devices
+termux-usb -l
 ```
+2. Request direct hardware access using the specific custom path you found from the first command:
+```bash
+termux-usb -r /dev/bus/usb/001/001
+```
+3. Alternatively, if your system or environment automatically matches the default or standard connected device path, you can directly run the request command without modifying the path:
+```bash
+termux-usb -r PUT_YOUR_FOUND_PATH_HERE
+```
+Note: A native Android permission dialog box will instantly appear on your screen. Tap OK to grant Termux sandbox bypass access to the USB port.
+
  permission allowed tool 
 ```bash
 chmod +x install.sh
